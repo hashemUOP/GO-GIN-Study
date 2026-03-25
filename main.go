@@ -29,5 +29,12 @@ func main() {
 
 	// new route to create user
 	r.POST("/create", middleware.CreateUserMiddleware(), handler.CreateUser)
+
+	//new route to delete user
+	r.DELETE("/users/:username", middleware.DeleteUserMiddleware(), handler.DeleteUser)
+
+	//new route to read user
+	// r.GET("/users/:username", middleware.ReadUserMiddleware(), handler.ReadUser)
+
 	r.Run(":8081")
 }
