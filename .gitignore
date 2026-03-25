@@ -1,0 +1,21 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Dependency directories 
+# (Only ignore vendor/ if you aren't using 'go mod vendor')
+vendor/
+
+# Environment variables (Sensitive Data)
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# specific package files
+keys
