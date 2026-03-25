@@ -34,7 +34,7 @@ func main() {
 	r.DELETE("/users/:username", middleware.DeleteUserMiddleware(), handler.DeleteUser)
 
 	//new route to read user
-	// r.GET("/users/:username", middleware.ReadUserMiddleware(), handler.ReadUser)
+	r.GET("/users/:username", middleware.ReadUserMiddleware(), handler.ReadUser)
 
 	r.Run(":8081")
 }
